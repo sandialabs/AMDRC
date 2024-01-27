@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<machine>
+  <name>MakerBot</name>
+  <materials>
+    <material>
+      <name>PLA Filament</name>
+      <parameters>
+        <parameter>
+          <name>MinHoleDiam</name>
+          <value>.2</value>
+        </parameter>
+        <parameter>
+          <name>MinAngle</name>
+          <value>30</value>
+        </parameter>
+        <parameter>
+          <name>MaxFaceHeight</name>
+          <value>30</value>
+        </parameter>
+      </parameters>
+    </material>
+  </materials>
+</machine>

@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<diagnostics>
+  <diagnostic>
+    <name>Unsupported Angles</name>
+    <description>Checks to see if there are any angles in the model that cannot be printed.</description>
+    <program>UnsupportedAngles</program>
+    <enabled>STEP</enabled>
+    <parameters>
+      <parameter>MinAngle</parameter>
+    </parameters>
+  </diagnostic>
+
+  <diagnostic>
+    <name>Unsupported Overhangs</name>
+    <description>Checks to see if there are any overhangs that would cause the print to collapse.</description>
+    <enabled>STL</enabled>
+    <program>LocalMinima</program>
+  </diagnostic>
+
+  <diagnostic>
+    <name>Unsupported Holes</name>
+    <description>Checks to see if any holes are too small to print.</description>
+    <program>Holes</program>
+    <enabled>STEP</enabled>
+    <parameters>
+      <parameter>MinHoleDiam</parameter>
+    </parameters>
+  </diagnostic>
+
+  <diagnostic>
+    <name>Watertight</name>
+    <description>Checks to see if the mesh is watertight.</description>
+    <program>Watertight</program>
+    <enabled>STL</enabled>
+  </diagnostic>
+
+  <!--<diagnostic>
+    <name>Bridges</name>
+    <description>Checks to see if there are any bridges that are too wide or too narrow.</description>
+  </diagnostic>-->
+
+  <!--<diagnostic>
+    <name>Surface Finish</name>
+    <description>Checks (don't worry about it)</description>
+  </diagnostic>-->
+
+  <!--<diagnostic>
+    <name>Minimum Feature Size</name>
+    <description>Checks to see if feature sizes are within minimum range.</description>
+  </diagnostic>
+
+  <diagnostic>
+    <name>Maximum Straight Wall Height</name>
+    <description>Checks to see that the maximum straight wall height is not exceeded.</description>
+  </diagnostic>-->
+
+  <diagnostic>
+    <name>Tall Faces</name>
+    <description>Checks for any vertical faces that exceed a certain threshold.</description>
+    <program>TallFaces</program>
+    <enabled>STEP</enabled>
+    <parameters>
+      <parameter>MaxFaceHeight</parameter>
+    </parameters>
+  </diagnostic>
+
+  <diagnostic>
+    <name>Enclosed Pockets</name>
+    <description>Checks if filler material will get stuck.</description>
+    <program>Enclosed</program>
+    <enabled>STEP</enabled>
+  </diagnostic>
+
+  <!--<diagnostic>
+    <name>Feature Proximity</name>
+    <description>Checks to see if features are too close together to print.</description>
+  </diagnostic>-->
+</diagnostics>

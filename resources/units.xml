@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<units>
+  <unit>
+    <name>Inches</name>
+    <modifier>1</modifier>
+  </unit>
+  <unit>
+    <name>Millimeters</name>
+    <modifier>25.4</modifier>
+  </unit>
+</units>
